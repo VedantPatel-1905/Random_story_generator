@@ -1,0 +1,12 @@
+section > div> div>button
+{
+    height: 2em;
+    width: 100px;
+    margin: 0 10px 0 0;
+}
+section > div> div
+{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}

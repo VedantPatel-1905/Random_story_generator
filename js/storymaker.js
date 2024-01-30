@@ -8,7 +8,7 @@ const verbBtn = document.querySelector("#verb");
 const adjectiveBtn = document.querySelector("#adjective");
 const nounBtn2 = document.querySelector("#noun2");
 const settingBtn = document.querySelector("#setting");
-
+const resetBtn = document.querySelector("#reset");
 
 // Constants for p tag to display query selectors
 const nounPara1 = document.querySelector("#choosenNoun1");
@@ -93,6 +93,17 @@ function random_on_click() {
     storyPara.textContent = noun1+ " " + verb+ " " + adjective+ " " + noun2+ " " + setting;
 }
 
+function reset_on_click()
+{
+    storyPara.textContent = "";
+    noun1 = noun2 = verb = adjective = setting = "";
+    settingPara.textContent = setting;
+    nounPara2.textContent = noun2;
+    adjectivePara.textContent = adjective;
+    verbPara.textContent = verb;
+    nounPara1.textContent = noun1;
+}
+
 /* Event Listeners
 -------------------------------------------------- */
 nounBtn1.addEventListener("click",noun1_on_click);
@@ -102,3 +113,4 @@ nounBtn2.addEventListener("click",noun2_on_click);
 settingBtn.addEventListener("click",setting_on_click);
 playback.addEventListener("click",playback_on_click)
 random.addEventListener("click",random_on_click)
+resetBtn.addEventListener("click",reset_on_click)
