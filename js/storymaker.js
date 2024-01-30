@@ -21,6 +21,7 @@ const settingPara = document.querySelector("#choosenSetting");
 const playback = document.querySelector("#playback");
 const random = document.querySelector("#random");
 const storyPara = document.querySelector("#story");
+const body = document.querySelector("body");
 
 // Variables for pre-defined arrays
 var nounArray1 = ["The turkey","Mom","Dad","The dog","My teacher","The elephant"];
@@ -48,30 +49,35 @@ function noun1_on_click() {
     // variable to get array element and displaying it
     noun1 = randomValueFromArray(nounArray1);
     nounPara1.textContent = noun1;
-    // if-else to change count setting
+    body.style.background = "blue";
+    
 }
 
 function verb_on_click() {
     
     verb = randomValueFromArray(verbArray);
     verbPara.textContent = verb;
+    body.style.background = "blue";
 }
 
 function adjective_on_click() {
     
     adjective = randomValueFromArray(adjectiveArray);
     adjectivePara.textContent = adjective;
+    body.style.background = "blue";
 }
 
 function noun2_on_click() {
     noun2 = randomValueFromArray(nounArray2);
     nounPara2.textContent = noun2;
+    body.style.background = "blue";
     
 }
 
 function setting_on_click() {
     setting = randomValueFromArray(settingArray);
     settingPara.textContent = setting;
+    body.style.background = "blue";
     
 }
 
