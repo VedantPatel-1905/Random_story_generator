@@ -49,7 +49,7 @@ function noun1_on_click() {
     // variable to get array element and displaying it
     noun1 = randomValueFromArray(nounArray1);
     nounPara1.textContent = noun1;
-    body.style.background = "blue";
+    body.style = "background: #eda9f2;";
     
 }
 
@@ -57,27 +57,27 @@ function verb_on_click() {
     
     verb = randomValueFromArray(verbArray);
     verbPara.textContent = verb;
-    body.style.background = "blue";
+    body.style = "background: #7bdee3;";
 }
 
 function adjective_on_click() {
     
     adjective = randomValueFromArray(adjectiveArray);
     adjectivePara.textContent = adjective;
-    body.style.background = "blue";
+    body.style = "background: #8de991;;";
 }
 
 function noun2_on_click() {
     noun2 = randomValueFromArray(nounArray2);
     nounPara2.textContent = noun2;
-    body.style.background = "blue";
+    body.style = "background: #e5ed8f;";
     
 }
 
 function setting_on_click() {
     setting = randomValueFromArray(settingArray);
     settingPara.textContent = setting;
-    body.style.background = "blue";
+    body.style = "background: #b98fec;";
     
 }
 
@@ -101,6 +101,7 @@ function random_on_click() {
 
 function reset_on_click()
 {
+    body.style = "background: #ffffff;";
     storyPara.textContent = "";
     noun1 = noun2 = verb = adjective = setting = "";
     settingPara.textContent = setting;
